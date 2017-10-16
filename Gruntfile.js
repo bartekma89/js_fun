@@ -41,7 +41,10 @@ module.exports = function (grunt) {
 
 		//jshint
 		jshint: {
-			all: ['js/**/*.js']
+			all: ['js/**/*.js'],
+			/*options: {
+				reporter: require('jshint-stylish')
+			}*/
 		},
 
 		//watch
