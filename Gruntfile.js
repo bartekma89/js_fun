@@ -42,9 +42,9 @@ module.exports = function (grunt) {
 		//jshint
 		jshint: {
 			all: ['js/**/*.js'],
-			/*options: {
+			options: {
 				reporter: require('jshint-stylish')
-			}*/
+			}
 		},
 
 		//watch
@@ -54,7 +54,14 @@ module.exports = function (grunt) {
 				tasks: ['sass'],
 				options: {
 					livereload: true,
-					spawn: false
+					spawn: false,
+					"curly": true,
+					"eqnull": true,
+					"eqeqeq": true,
+					"undef": true,
+					"globals": {
+						"jQuery": true
+					}
 				}
 			},
 			browser: {
