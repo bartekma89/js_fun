@@ -1,6 +1,6 @@
 var name = prompt('Enter your name');
-alert('Hello, ' + name);
-//console.log('Hello, ' + name);
+//alert('Hello, ' + name);
+console.log('Hello, ' + name);
 
 /*var number = 5;
 console.log(number);*/

@@ -41,9 +41,18 @@ module.exports = function (grunt) {
 
 		//jshint
 		jshint: {
-			all: ['js/**/*.js'],
+			files: {
+				src: ['js/**/*.js']
+			},
 			options: {
-				reporter: require('jshint-stylish')
+				reporter: require('jshint-stylish'),
+				camelcase: true,
+				/*curly: true,
+				latedef: true,
+				undef: true,
+				unused: true,
+				sub: true,
+				eqnull: true*/
 			}
 		},
 
@@ -55,13 +64,6 @@ module.exports = function (grunt) {
 				options: {
 					livereload: true,
 					spawn: false,
-					"curly": true,
-					"eqnull": true,
-					"eqeqeq": true,
-					"undef": true,
-					"globals": {
-						"jQuery": true
-					}
 				}
 			},
 			browser: {
