@@ -47,12 +47,12 @@ module.exports = function (grunt) {
 			options: {
 				reporter: require('jshint-stylish'),
 				camelcase: true,
-				/*curly: true,
-				latedef: true,
-				undef: true,
-				unused: true,
-				sub: true,
-				eqnull: true*/
+				//curly: true,
+				//latedef: true,
+				//undef: true,
+				//unused: true,
+				//sub: true,
+				//eqnull: true
 			}
 		},
 
@@ -85,7 +85,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['sass', 'browserSync', 'jshint', 'watch']);
+	grunt.registerTask('default', ['sass', 'jshint', 'watch']);
+	grunt.registerTask('all', ['sass', 'browserSync', 'jshint', 'watch']);
 
 	grunt.registerTask('img', ['imagemin']);
 	grunt.registerTask('jsh', ['jshint', 'watch']);
