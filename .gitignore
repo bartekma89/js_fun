@@ -3,3 +3,4 @@ images/*
 node_modules/*
 .sass-cache/*
 js/practice.js
+js/condition.js
